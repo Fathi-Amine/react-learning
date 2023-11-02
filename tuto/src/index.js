@@ -1,21 +1,32 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-// function Greetings(){
-//     return <h2>My first Component</h2>
-// }
-function Greetings(){
-    return(
-        <div>
-            <Person />
-            <Message />
-        </div>
-    )
+const BookList = () => {
+    return <section>
+        <Book />
+    </section>
 }
 
-const Person = ()=><h2>Amine Fathi</h2>
-const Message = ()=><p>This is my message</p>
+const Book = ()=>{
+    return <article>
+        <Image />
+        <Title />
+        <Author />
+    </article>
+}
+
+const Image = () => {
+    return <img src='https://images-na.ssl-images-amazon.com/images/I/81tdvyI0MeL._AC_UL900_SR900,600_.jpg'  alt="bookImage"/>
+}
+
+const Title = ()=>{
+    return <h2>Friends, Lovers, and the Big Terrible Thing</h2>
+}
+
+const Author = () => {
+    return <h4>Matthew Perry</h4>
+}
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
-root.render(<Greetings />)
+root.render(<BookList />)
 // export default Greetings
