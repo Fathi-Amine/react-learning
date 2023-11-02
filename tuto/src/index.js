@@ -5,7 +5,8 @@ import ReactDOM from 'react-dom/client'
 //     return <h2>My first Component</h2>
 // }
 function Greetings(){
-    return <React.Fragment>
+    return(
+    <>
         <div>
             <h2>Hello to the world</h2>
             <ul>
@@ -13,7 +14,8 @@ function Greetings(){
             </ul>
         </div>
         <h2>Hello again</h2>
-    </React.Fragment>
+    </>
+    )
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
