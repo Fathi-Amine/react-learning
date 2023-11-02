@@ -6,18 +6,15 @@ import ReactDOM from 'react-dom/client'
 // }
 function Greetings(){
     return(
-    <>
         <div>
-            <h2>Hello to the world</h2>
-            <ul>
-                <li><a href="#">Welcome</a></li>
-            </ul>
+            <Person />
+            <Message />
         </div>
-        <h2>Hello again</h2>
-    </>
     )
 }
 
+const Person = ()=><h2>Amine Fathi</h2>
+const Message = ()=><p>This is my message</p>
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(<Greetings />)
