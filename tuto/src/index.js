@@ -27,7 +27,8 @@ const BookList = () => {
     return <section className="bookList">
         <EventExamples />
         {books.map((book)=>{
-            return <Book title={book.title} image={book.image} author={book.author} key={book.id}/>
+            const {title, author, image, id} = book
+            return <Book {...book} key={id}/>
 
     })}</section>
 }
