@@ -12,9 +12,9 @@ const BookList = () => {
         console.log(book)
     }
     return <section className="bookList">
-        {books.map((book)=>{
+        {books.map((book,index)=>{
             const {title, author, image, id} = book
-            return <Book {...book} key={id} getBook={getBook}/>
+            return <Book {...book} key={id} number={index}/>
 
     })}</section>
 }
