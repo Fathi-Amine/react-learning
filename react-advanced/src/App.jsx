@@ -1,4 +1,4 @@
-import Starter from './concepts/useState/Examples/05-useState-cotcha.jsx'
+import Starter from './concepts/useEffect/examples/01-code-example.jsx'
 function App() {
 
   return (
