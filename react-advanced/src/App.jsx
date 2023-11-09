@@ -1,4 +1,4 @@
-import Starter from './concepts/useEffect/examples/01-code-example.jsx'
+import Starter from './concepts/useEffect/examples/02-useEffect-basics.jsx'
 function App() {
 
   return (
